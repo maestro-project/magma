@@ -1,5 +1,5 @@
 # MAGMA #
-This is the implementation of the paper [MAGMA](https://arxiv.org/abs/2104.13997),
+This is the implementation of the paper [MAGMA](https://arxiv.org/abs/2104.13997).
 
 ### Installation ###
 * Install requirement
