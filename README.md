@@ -1,7 +1,7 @@
 # MAGMA #
 <img width="863" alt="image" src="https://user-images.githubusercontent.com/34088771/174333468-74bb526b-a8ab-4a92-b77f-b5a50658d327.png">
 
-This is the implementation of the paper [MAGMA](https://arxiv.org/abs/2104.13997).
+This is the implementation of the paper [MAGMA](https://arxiv.org/abs/2104.13997), [youtube](https://www.youtube.com/watch?v=8ZwTBlAswGA&t=4s).
 
 ### Installation ###
 * Install requirement
