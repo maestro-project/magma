@@ -98,7 +98,7 @@ def ng_search(sch,choose_optimizer, num_generations=100,num_population=1):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--outdir', type=str, default="output", help='pickle file name')
-    parser.add_argument('--alg', type=str, default="GA", help='pickle file name')
+    parser.add_argument('--alg', type=str, default="PSO", help='pickle file name')
     parser.add_argument('--epochs', type=int, default=3, help='pickle file name')
     parser.add_argument('--trfdir', type=str, default="../traffic", help='pickle file name')
     parser.add_argument('--instsdir', type=str, default="batch_mix", help='pickle file name')
@@ -206,10 +206,10 @@ if __name__ == "__main__":
                              chkpt_file=chkpt_file, is_random=is_random, \
                              insts_table_file=insts_table_file, true_random=False, dram_bw=dram_bw, is_flex=is_flex, sel_pe=sel_pe)
         # for opt_idx in range(7, len(optimizer_list),1):
-        for opt_idx in range(7):
-            choose_optimizer = optimizer_list[opt_idx]
-            reward = ng_search(sch_GA, choose_optimizer, num_generations=opt.epochs)
-            record_table[choose_optimizer].append(reward)
+        # for opt_idx in range(7):
+        choose_optimizer = opt.alg
+        reward = ng_search(sch_GA, choose_optimizer, num_generations=opt.epochs)
+        record_table[choose_optimizer].append(reward)
         df = pd.DataFrame(record_table)
         df.to_csv(record_table_file_ng)
     #============================================================================================
