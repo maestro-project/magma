@@ -13,7 +13,9 @@ python build.py
 ### Example Usage ###
 * Run MAGMA: ``sh run/runGA.sh``
 * Run RL: ``sh run/runRL.sh``
+  * Available RLs: A2C, ACKTR, PPO2, DQN, TRPO, ACER, SAC DDPG
 * Run Blackbox: ``sh run/run_blackbox.sh``
+  * Avaliable Blackbox: PSO, Portfolio, OnePlusOne,CMA, DE, NaiveTBPSA, cGA, CauchyLHSSearch, HaltonSearch, HammersleySearch, MetaRecentering
 
 ### Contributor ###
 * Sheng-Chun (Felix) Kao
